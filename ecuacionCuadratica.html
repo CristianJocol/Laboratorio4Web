@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <title>Solucionador ecuación Cuadrática</title>
-        <script type="text/javascript"></script>
+        <script src="script.js" type="text/javascript"></script>
     </head>
     <body>
         <div id="titulo-principal">
@@ -14,8 +14,19 @@
         <form action="#" name="ingresoVariables">
             <h3>Rellene las variables</h3>
             <div>
-                    <p><input type="text" name="vr" id="vr"> X <sup>2</sup></p>
+                    <p><input type="text" size="2" name="vc" id="vc"> X <sup>2</sup>+<input type="text" size="2" name="vl" id="vl">x+ <input type="text" size="2" name="vi" id="vi">=0</p>
             </div>
+            <h1><input type="button" value="calculo"></h1>
         </form>
+
+        <div id="raices">
+            <h3>Resultado:</h3>
+            <p>X1 =<input disabled="disabled" size="3" id="x1"></p>
+            <p>X2 =<input disabled="disabled" size="3" id="x2"></p>
+        </div>
+
+        <div class="regresar">
+            <a href="ecuacionCuadratica.html">Inicio</a>
+        </div>
     </body>
 </html>
