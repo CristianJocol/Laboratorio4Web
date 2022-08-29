@@ -14,9 +14,9 @@
         <form action="#" name="ingresoVariables">
             <h3>Rellene las variables</h3>
             <div>
-                    <p><input type="text" size="2" name="vc" id="vc"> X <sup>2</sup>+<input type="text" size="2" name="vl" id="vl">x+ <input type="text" size="2" name="vi" id="vi">=0</p>
+                    <p><input type="text" size="2" name="vc" id="vc" onchange=" return validanumero(this)"> X <sup>2</sup>+<input type="text" size="2" name="vl" id="vl" onchange="return validanumero(this)">x+ <input type="text" size="2" name="vi" id="vi" onchange="return validanumero(this)">=0</p>
             </div>
-            <h1><input type="button" value="calculo"></h1>
+            <h1><input type="button" value="calculo" onclick="ecuacion()"></h1>
         </form>
 
         <div id="raices">
